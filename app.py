@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import bottle
+
 from sys import argv
 from bottle import route, run
 @route('/')
@@ -15,8 +15,6 @@ def home():
                 <a href="https://github.com/sigmarola/verk1">Github</a>
             </body>
             </html>"""
-
-
 
 bottle.run(host='0.0.0.0', port=argv[1])
 
