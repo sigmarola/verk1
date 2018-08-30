@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 # -*- coding: utf-8 -*-
 
 import os
@@ -7,6 +7,8 @@ import bottle
 application = bottle.default_app()
 from bottle import default_app, request, route, response, get
 from sys import argv
+
+bottle.debug(True)
 
 
 @get('/')
