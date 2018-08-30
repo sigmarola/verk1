@@ -4,7 +4,7 @@ import os
 from sys import argv
 
 import bottle
-from bottle import route, run
+from bottle import default_app, request, route, response, get, run
 @route('/')
 def home():
     return """<!DOCTYPE html>
