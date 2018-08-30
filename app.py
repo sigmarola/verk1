@@ -1,11 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import os
-from sys import argv
+
 
 import bottle
-from bottle import default_app, request, route, response, get, run
-@route('/')
+application = bottle.default_app()
+from bottle import default_app, request, route, response, get
+from sys import argv
+
+
+@get('/')
 def home():
     return """<!DOCTYPE html>
             <html>
@@ -17,6 +20,9 @@ def home():
                 <a href="https://github.com/sigmarola/verk1">Github</a>
             </body>
             </html>"""
+
+
+
 
 bottle.run(host='0.0.0.0', port=argv[1])
 
