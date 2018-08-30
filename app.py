@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+import bottle
 from sys import argv
 from bottle import route, run
 @route('/')
